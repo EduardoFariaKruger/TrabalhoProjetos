@@ -70,7 +70,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>ReadData1</string>
+          <string>RD1</string>
         </entry>
         <entry>
           <string>Bits</string>
@@ -84,7 +84,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>ReadData2</string>
+          <string>RD2</string>
         </entry>
         <entry>
           <string>Bits</string>
@@ -397,12 +397,12 @@
       <elementName>Multiplexer</elementName>
       <elementAttributes>
         <entry>
-          <string>Bits</string>
-          <int>32</int>
-        </entry>
-        <entry>
           <string>Selector Bits</string>
           <int>5</int>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
         </entry>
       </elementAttributes>
       <pos x="720" y="320"/>
@@ -2222,9 +2222,14 @@
       <pos x="-440" y="440"/>
     </visualElement>
     <visualElement>
-      <elementName>Const</elementName>
-      <elementAttributes/>
-      <pos x="-440" y="760"/>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Word_en</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-480" y="760"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -2577,6 +2582,10 @@
       <p2 x="60" y="760"/>
     </wire>
     <wire>
+      <p1 x="-480" y="760"/>
+      <p2 x="-440" y="760"/>
+    </wire>
+    <wire>
       <p1 x="360" y="1400"/>
       <p2 x="380" y="1400"/>
     </wire>
@@ -2725,12 +2734,12 @@
       <p2 x="360" y="2520"/>
     </wire>
     <wire>
-      <p1 x="360" y="920"/>
-      <p2 x="360" y="1000"/>
-    </wire>
-    <wire>
       <p1 x="360" y="2200"/>
       <p2 x="360" y="2280"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="920"/>
+      <p2 x="360" y="1000"/>
     </wire>
     <wire>
       <p1 x="360" y="680"/>
